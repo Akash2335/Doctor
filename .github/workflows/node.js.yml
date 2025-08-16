@@ -16,9 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Print repository
-        run: echo "Repository: ${{ github.repository }}"
+      - name: 'Print repository'
+        run: echo 'Repository ${{ github.repository }}'
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
